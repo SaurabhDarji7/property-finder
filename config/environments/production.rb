@@ -72,6 +72,12 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
+  # Add internationalization(I18n)
+  config.i18n.available_locales = :en
+
+  # Raises error for missing translations.
+  config.i18n.raise_on_missing_translations = true
+
   # Don't log any deprecations.
   config.active_support.report_deprecations = false
 

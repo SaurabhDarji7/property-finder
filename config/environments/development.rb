@@ -62,8 +62,11 @@ Rails.application.configure do
   # Shows the mails in the local host itself
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  # Add internationalization(I18n)
+  config.i18n.available_locales = :en
+
   # Raises error for missing translations.
-  # config.i18n.raise_on_missing_translations = true
+  config.i18n.raise_on_missing_translations = true
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
